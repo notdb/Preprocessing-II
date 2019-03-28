@@ -183,6 +183,11 @@ header {
   padding-bottom: 20px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    padding-bottom: 1px;
+  }
+}
 header div {
   display: flex;
   align-items: center;
@@ -215,6 +220,7 @@ header div nav a {
 }
 @media (max-width: 500px) {
   header div nav {
+    padding-top: 10px;
     justify-content: space-evenly;
     text-align: center;
     width: 100%;

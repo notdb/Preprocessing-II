@@ -8,6 +8,10 @@ header {
     padding-bottom: 20px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+        padding-bottom: 1px;
+    }
+
     div {
         display:flex;
         align-items: center;
@@ -17,6 +21,7 @@ header {
         @media @phone {
             justify-content: center;
             flex-flow: wrap;
+            
         }
     
     .resume-title{
@@ -34,6 +39,7 @@ header {
         margin: 0px 1rem;
         }
         @media @phone {
+            padding-top: 10px;
             justify-content: space-evenly;
             text-align: center;
             width: 100%;
