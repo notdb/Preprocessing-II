@@ -215,7 +215,7 @@ header div nav a {
 }
 @media (max-width: 500px) {
   header div nav {
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%;
   }
