@@ -293,10 +293,31 @@ header div nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  justify-content: center;
+  width: 80%;
+  border-radius: 15px;
+  background-color: #17A2B8;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.75rem;
+  padding: 10px;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
     align-items: center;
     width: 90%;
     margin-bottom: 30px;
+  }
+  .home .content-pick .destination .btn {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #17A2B8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
   }
 }
