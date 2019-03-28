@@ -3,15 +3,18 @@
 
 header {
     display: flex;
-    margin-top: 15px;
-    border-bottom: 1px dashed black;
+    align-content: center;
+    margin: 25px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed @navigation-border;
 
     div {
         display:flex;
+        align-items: center;
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 7.5px;
+        
     
     .resume-title{
         width: 49.5%;
@@ -25,6 +28,16 @@ header {
         }
     }
     @media @phone {
+        div {
+            display:flex;
+            flex-wrap:nowrap;
+            .resume-title{
+                width: 100%;
+            }
+            nav {
+                width: 100%;
+            }
+        }
         
     }
 }
