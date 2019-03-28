@@ -62,10 +62,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @phone {
+      
+      flex-direction: column;
+      align-items: center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        align-items: center;
+        width: 90%;
+        margin-bottom: 30px;
+      }
     }
   }
 }// home
