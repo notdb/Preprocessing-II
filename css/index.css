@@ -169,6 +169,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 header {
   display: flex;
   align-content: center;
@@ -183,8 +190,20 @@ header div {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header div {
+    justify-content: center;
+    flex-flow: wrap;
+  }
+}
 header div .resume-title {
   width: 49.5%;
+}
+@media (max-width: 500px) {
+  header div .resume-title {
+    text-align: center;
+    width: 100%;
+  }
 }
 header div nav {
   display: flex;
@@ -195,14 +214,9 @@ header div nav a {
   margin: 0px 1rem;
 }
 @media (max-width: 500px) {
-  header div div {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  header div div .resume-title {
-    width: 100%;
-  }
-  header div div nav {
+  header div nav {
+    justify-content: center;
+    text-align: center;
     width: 100%;
   }
 }

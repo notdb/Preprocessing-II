@@ -14,10 +14,17 @@ header {
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
-        
+        @media @phone {
+            justify-content: center;
+            flex-flow: wrap;
+        }
     
     .resume-title{
         width: 49.5%;
+        @media @phone {
+            text-align: center;
+            width: 100%;
+        }
     }
     nav {
         display: flex;
@@ -26,19 +33,12 @@ header {
         a{
         margin: 0px 1rem;
         }
-    }
-    @media @phone {
-        div {
-            display:flex;
-            flex-wrap:nowrap;
-            .resume-title{
-                width: 100%;
-            }
-            nav {
-                width: 100%;
-            }
+        @media @phone {
+            justify-content: center;
+            text-align: center;
+            width: 100%;
         }
-        
     }
+
 }
 }
